@@ -14,8 +14,12 @@ const MODELS = [
   { value: 'gemini_3_1_pro', label: 'Gemini 3.1 Pro' },
   { value: 'gpt_5_mini', label: 'GPT-5 Mini' },
   { value: 'gpt_5_4', label: 'GPT-5.4' },
+  { value: 'gpt_5_5', label: 'GPT-5.5' },
   { value: 'claude_sonnet_4_6', label: 'Claude Sonnet 4.6' },
+  { value: 'claude-sonnet-5', label: 'Claude Sonnet 5' },
   { value: 'claude_opus_4_6', label: 'Claude Opus 4.6' },
+  { value: 'claude_opus_4_7', label: 'Claude Opus 4.7' },
+  { value: 'claude_opus_4_8', label: 'Claude Opus 4.8' },
 ];
 
 const EXAMPLE_CURL = `curl -X POST \\
@@ -204,7 +208,7 @@ export default function Home() {
               <div className="space-y-3">
                 {[
                   { name: 'prompt', type: 'string', required: true, desc: 'The prompt to send to the LLM' },
-                  { name: 'model', type: 'string', required: false, desc: 'automatic, gemini_3_flash, gemini_3_1_pro, gpt_5_mini, gpt_5_4, claude_sonnet_4_6, claude_opus_4_6' },
+                  { name: 'model', type: 'string', required: false, desc: 'automatic, gemini_3_flash, gemini_3_1_pro, gpt_5_mini, gpt_5_4, gpt_5_5, claude_sonnet_4_6, claude-sonnet-5, claude_opus_4_6, claude_opus_4_7, claude_opus_4_8' },
                   { name: 'add_context_from_internet', type: 'boolean', required: false, desc: 'Enable web search (Gemini models only)' },
                   { name: 'response_json_schema', type: 'object', required: false, desc: 'JSON schema for structured output' },
                   { name: 'file_urls', type: 'string[]', required: false, desc: 'File URLs to attach as context' },
