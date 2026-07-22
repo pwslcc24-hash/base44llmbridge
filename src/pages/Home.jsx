@@ -16,7 +16,6 @@ const MODELS = [
   { value: 'gpt_5_4', label: 'GPT-5.4' },
   { value: 'gpt_5_5', label: 'GPT-5.5' },
   { value: 'claude_sonnet_4_6', label: 'Claude Sonnet 4.6' },
-  { value: 'claude-sonnet-5', label: 'Claude Sonnet 5' },
   { value: 'claude_opus_4_6', label: 'Claude Opus 4.6' },
   { value: 'claude_opus_4_7', label: 'Claude Opus 4.7' },
   { value: 'claude_opus_4_8', label: 'Claude Opus 4.8' },
